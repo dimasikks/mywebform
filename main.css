@@ -106,10 +106,10 @@ button:hover{
     color:White;
 }
 .authturn{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 430px;
     width:950px;
-    height: 700px;
+    height: 750px;
     border: 15px solid;
     border-color: rgb(236, 199, 199);
     background: black;
@@ -117,7 +117,7 @@ button:hover{
 form{
     z-index: 10;
     width:400px;
-    padding-top:20px;
+    padding-top:2px;
     padding-left: 210px;
     justify-content: center;
     display: flex;
@@ -136,7 +136,7 @@ label{
 #btn{
     font-size: 25px;
     margin-left: 135px;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 230px;
     cursor: pointer;
 }
@@ -180,4 +180,8 @@ form input[type=text]{
     height: 60px;
     background-color: green;
     border-radius: 0 40px 40px 0;
+}
+.g-recaptcha{
+    padding-left: 100px;
+    padding-top: 10px;
 }
