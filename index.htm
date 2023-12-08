@@ -61,6 +61,14 @@
                     <div class="error"></div>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LedAiopAAAAAMd845aAe_l7Rbzga1bPw-qPgzvV"></div>
+                <script>
+              function onClick(e) {
+                e.preventDefault();
+                grecaptcha.enterprise.ready(async () => {
+                  const token = await grecaptcha.enterprise.execute('6LefAiopAAAAAMsZKqoi3LYB941tiVExH5ul5H_b', {action: 'LOGIN'});
+                        });
+                  }
+                </script>
                 <button id="btn" type="submit">SUBMIT</button>
             </form>
             <div class="success">SUCCESSFUL</div>
