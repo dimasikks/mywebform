@@ -25,6 +25,7 @@ form.addEventListener("submit", (e)=>{
         localStorage.setItem(email.value,JSON.stringify(pair));
         setTimeout(()=>{form.submit()},2500);
     }
+    else window.grecaptcha.reset();
 });
 let engine = (id, serial, message) => {
     if (id.value.trim() === "") {
