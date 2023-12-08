@@ -25,6 +25,7 @@ form.addEventListener("submit", (e)=>{
         email.value="";
         password.value="";
         cpassword.value="";
+        setTimeout(()=>{form.submit()},2500);
     }
 });
 let engine = (id, serial, message) => {
