@@ -17,17 +17,14 @@ form.addEventListener("submit", (e)=>{
     both(password,cpassword,3,"Passwords don't match");
     checkpassword(password,2);
     if(trig){
-        username.style.border="2px solid #c4c4c4";
-        email.style.border="2px solid #c4c4c4";
-        password.style.border="2px solid #c4c4c4";
-        cpassword.style.border="2px solid #c4c4c4";
-        username.value="";
-        email.value="";
-        password.value="";
-        cpassword.value="";
+        username.style.border="2px solid green";
+        email.style.border="2px solid green";
+        password.style.border="2px solid green";
+        cpassword.style.border="2px solid green";
+        var pair = [username.value,password.value];
+        localStorage.setItem(email.value,JSON.stringify(pair));
         setTimeout(()=>{form.submit()},2500);
     }
-    else window.grecaptcha.reset();
 });
 let engine = (id, serial, message) => {
     if (id.value.trim() === "") {
@@ -129,4 +126,3 @@ let redpasses = ()=>{
     document.getElementById("cpassword").style.border = "4px solid red";
     trig=0;
 };
-
