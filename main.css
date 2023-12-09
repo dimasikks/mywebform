@@ -9,6 +9,8 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    order:1;
+    flex: 9;
 }
 .navbar{
     background-color: black;
@@ -42,39 +44,37 @@ button:hover{
     margin: 25px 400px 25px 40px;
     width: 450px;
 }
-@media all and (min-width:800px){
-    .b1{
-        z-index: 20;
-        order: 1;
-        flex:1;
-    }
-    .b2{
-        z-index: 20;
-        order: 2;
-        flex:1;
-    }
-    .forms{
-        border: 20px solid;
-        border-color:rgb(0, 0, 0);
-        border-style: none solid;
-        order:1;
-        flex:40;
-        
-    }
-    .lowbar{
-        padding-top: 10px;
-        padding-bottom: 5px;
-        letter-spacing: 5px;
-        font-size: 25px;
-        order:2;
-        flex:1;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        text-align: center;
-        color:white;
-        background-color: black;
-    }
+.forms{
+    border: 20px solid;
+    border-color:rgb(0, 0, 0);
+    border-style: none solid;
+    order:1;
+    flex:40;
+    
+}
+.b1{
+    z-index: 20;
+    order: 1;
+    flex:1;
+}
+.b2{
+    z-index: 20;
+    order: 2;
+    flex:1;
+}
+.lowbar{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    order:2;
+    flex:1;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color:white;
+    background-color: black;
 }
 .pageform{
     background: none;
@@ -175,12 +175,22 @@ form input[type=text]{
     padding-left: 15px;
     font-size: 30px;
     color:black;
-    width: 230px;
+    width: 250px;
     height: 60px;
     background-color: green;
     border-radius: 0 40px 40px 0;
+    white-space: nowrap;
 }
 .g-recaptcha{
     padding-left: 100px;
     padding-top: 10px;
+}
+.pinfo{
+    color:white;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.pinfo:hover{
+    color: blue;
 }
