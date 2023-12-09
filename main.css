@@ -90,10 +90,11 @@ button:hover{
 #auth{
     opacity: 0;
 }
+@media (min-width:900px){
 .start_window{
     border-radius: 100px;
     margin-top:120px;
-    margin-left:140px;
+    margin-left:120px;
     padding: 20px;
     font-family: 'Optima';
     width:85%;
@@ -103,6 +104,7 @@ button:hover{
     text-align: center;
     font-size: 100px;
     color:White;
+}
 }
 .authturn{
     margin-top: 30px;
