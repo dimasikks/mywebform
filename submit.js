@@ -24,7 +24,12 @@ form.addEventListener("submit", (e)=>{
         cpassword.style.border="2px solid green";
         var pair = [username.value,password.value];
         localStorage.setItem(email.value,JSON.stringify(pair));
-        setTimeout(()=>{form.submit()},2500);
+        let kn =document.getElementById('btn');
+        kn.disabled=true;
+        setTimeout(()=>{
+            form.submit();
+            kn.disabled=false;
+        },2500);
     }
 });
 let engine = (id, serial, message) => {
@@ -94,6 +99,10 @@ let checkpassword=(id,serial)=>{
         }
     }
     if(!(password.value===cpassword.value)) return;
+    if(response.length===0){
+        alert("FILL OUT THE CAPTCHA");
+        return;
+    }
     let success=document.getElementsByClassName("success");
     let start = Date.now();
     let timer = setInterval(function() {
