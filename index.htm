@@ -68,10 +68,50 @@
         </div>
         </div>
         <div id="auth" class="pageform">
-            
-            <div id="lmao">lalal</div>
-            sdweffwefewfewfw
-        
+            <div class="authturn">
+                <form id="form">
+                    <div>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <label for="username">USERNAME</label>     
+                        <input type="text" maxlength="20" name="username" id="username"
+                        placeholder="Your name"
+                        autocomplete="off">
+                        
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <label for="email">EMAIL</label>
+                        <input type="text" maxlength="40" name="email" id="email"
+                        placeholder="youremail@gmail.com"
+                        autocomplete="off">  
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <label for="password">PASSWORD</label>
+                        
+                        <input type="text" maxlength="30" name="password" id="password"
+                        placeholder="Your password"
+                        autocomplete="off">               
+                        <div class="error"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <label for="cpassword">CONFIRM PASSWORD</label>
+                        
+                        <input type="text" maxlength="30" name="cpassword" id="cpassword"
+                        placeholder="Your password again"
+                        autocomplete="off">
+                          
+                        <div class="error"></div>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lc6ECspAAAAAFYE6fGJ3s9ac_ICdm99rGhaIMDP"></div>
+                    <button id="btn" type="submit">SUBMIT</button>
+                </form>
+                <div class="success">SUCCESSFUL</div>
+               <script src="submit.js"></script>
+            </div>
         </div>
         <script src="./authorization.js"></script>
 </div>
