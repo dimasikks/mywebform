@@ -9,8 +9,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    order:1;
-    flex: 9;
 }
 .navbar{
     position: absolute;
@@ -18,7 +16,7 @@
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 100vw;
+    min-width:100vw;
 }
 button{
     font-weight: bold;
@@ -38,11 +36,11 @@ button:hover{
     background-color: white;
 }
 .button_1{
-    margin: 25px 40px 25px 400px;
+    margin: 1vw 40px 25px 400px;
     width: 450px;
 }
 .button_2{
-    margin: 25px 400px 25px 40px;
+    margin: 1vw 400px 25px 40px;
     width: 450px;
 }
 .forms{
@@ -51,7 +49,6 @@ button:hover{
     border-style: none solid;
     order:1;
     flex:40;
-    
 }
 .b1{
     z-index: 20;
