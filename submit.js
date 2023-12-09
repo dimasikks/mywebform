@@ -22,8 +22,7 @@ form.addEventListener("submit", (e)=>{
         email.style.border="2px solid green";
         password.style.border="2px solid green";
         cpassword.style.border="2px solid green";
-        var pair = [username.value,password.value];
-        localStorage.setItem(email.value,JSON.stringify(pair));
+        localStorage.setItem("username",username.value);
         let kn =document.getElementById('btn');
         kn.disabled=true;
         setTimeout(()=>{
