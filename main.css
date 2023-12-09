@@ -17,6 +17,26 @@
     height: 10vh;
     min-width:100%;
 }
+.button_1{
+    width: 25vw;
+    height: 4vw;
+    border-radius: 40px;
+}
+.button_2{
+    width: 25vw;
+    height: 4vw;
+    border-radius: 40px;
+}
+.b1{
+    z-index: 20;
+    order: 1;
+    flex:1;
+}
+.b2{
+    z-index: 20;
+    order: 2;
+    flex:1;
+}
 button{
     font-weight: bold;
     border-radius: 25px;
@@ -34,14 +54,6 @@ button:hover{
     color:black;
     background-color: white;
 }
-.button_1{
-    margin: 1vw 40px 25px 400px;
-    width: 450px;
-}
-.button_2{
-    margin: 1vw 400px 25px 40px;
-    width: 450px;
-}
 .forms{
     border: 20px solid;
     border-color:rgb(0, 0, 0);
@@ -49,16 +61,7 @@ button:hover{
     order:1;
     flex:40;
 }
-.b1{
-    z-index: 20;
-    order: 1;
-    flex:1;
-}
-.b2{
-    z-index: 20;
-    order: 2;
-    flex:1;
-}
+
 .lowbar{
     position: fixed;
     padding-top: 10px;
