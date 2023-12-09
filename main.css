@@ -18,24 +18,14 @@
     min-width:100%;
 }
 .button_1{
-    width: 25vw;
-    height: 4vw;
-    border-radius: 40px;
-}
-.button_2{
-    width: 25vw;
+    margin-top: 0.5vw;
+    margin-left: 36vw;
+    width: 27vw;
     height: 4vw;
     border-radius: 40px;
 }
 .b1{
     z-index: 20;
-    order: 1;
-    flex:1;
-}
-.b2{
-    z-index: 20;
-    order: 2;
-    flex:1;
 }
 button{
     font-weight: bold;
@@ -195,18 +185,4 @@ form input[type=text]{
 }
 .pinfo:hover{
     color: blue;
-}
-.logincheck{
-    margin-left: 200px;
-}
-.loginform{
-    margin-top: 100px;
-}
-.loginerror{
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: red;
-    font-weight: bold;
-    white-space: nowrap;
-    margin-top:2px;
 }
