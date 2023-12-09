@@ -196,3 +196,17 @@ form input[type=text]{
 .pinfo:hover{
     color: blue;
 }
+.logincheck{
+    margin-left: 200px;
+}
+.loginform{
+    margin-top: 100px;
+}
+.loginerror{
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top:2px;
+}
