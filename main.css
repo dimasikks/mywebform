@@ -6,7 +6,7 @@
 .main{
     background-color: hsl(210deg, 30%, 8%);
     width: 100%;
-    height: 854px;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@
     background-color: black;
     display: flex;
     flex-direction: row;
-    height: 110px;
+    height: 10vh;
     width: 100%;
 }
 button{
