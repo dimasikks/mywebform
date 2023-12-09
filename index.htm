@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
     <title>WebForm</title>
 <link rel="stylesheet" href="main.css">
 <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -11,8 +10,6 @@
 <div class="navbar">
     <div class="b1">
 <button class="button_1" onclick="openPage(event,'reg')">REGISTER</button></div>
-    <div class="b2">
-<button class="button_2" onclick="openPage(event,'auth')">LOGIN</button></div>
 </div>
 <div class="main">
     <div class="forms">
@@ -23,7 +20,7 @@
         </div>
         <div id="reg" class="pageform">
             <div class="authturn">
-            <form id="form">
+            <form id="form" action="./dop.htm">
                 <div>
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                     <label for="username">USERNAME</label>     
@@ -67,40 +64,7 @@
            <script src="submit.js"></script>
         </div>
         </div>
-        <div id="auth" class="pageform">
-            <div class="authturn">
-                <div class="loginform">
-                <form id="form">
-                    <div>
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>
-                        <label for="username1">USERNAME</label>     
-                        <input type="text" maxlength="20" name="username1" id="username1"
-                        placeholder="Your name"
-                        autocomplete="off">
-                        
-                        <div class="loginerror"></div>
-                    </div>
-
-                    <div>
-                        <i class="fa fa-key" aria-hidden="true"></i>
-                        <label for="password1">PASSWORD</label>
-                        
-                        <input type="text" maxlength="30" name="password1" id="password1"
-                        placeholder="Your password"
-                        autocomplete="off">               
-                        <div class="loginerror"></div>
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6Lc6ECspAAAAAFYE6fGJ3s9ac_ICdm99rGhaIMDP"></div>   
-                </form>
-                <div class="logincheck">
-                <button id="btn" onclick="logincheck()"
-                    >LOGIN</button>
-                </div>
-                <script src="submitlogin.js"></script>
-                </div>
-            </div>
-        </div>
-
+    </div>
 </div>
 <div class="lowbar">created by <a href=https://t.me/dmsksc target="_blank" class="pinfo">dimasikks</a></div>
 </div>
