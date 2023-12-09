@@ -10,13 +10,14 @@ errorMsg = classes("error");
 let trig=1;
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
+    var recaptchecked=false;
     engine(username, 0, "Username cannot be blank");
     engine(email, 1, "Email cannot be blank");
     engine(password, 2, "Password cannot be blank");
     engine(cpassword,3,"Confirmed password cannot be blank");
     both(password,cpassword,3,"Passwords don't match");
     checkpassword(password,2);
-    if(trig){
+    if(trig && recaptchecked===true){
         username.style.border="2px solid green";
         email.style.border="2px solid green";
         password.style.border="2px solid green";
@@ -25,8 +26,10 @@ form.addEventListener("submit", (e)=>{
         localStorage.setItem(email.value,JSON.stringify(pair));
         setTimeout(()=>{form.submit()},2500);
     }
-    else window.grecaptcha.reset();
 });
+function recaptchaCallBack(){
+    recaptchecked = true;
+}
 let engine = (id, serial, message) => {
     if (id.value.trim() === "") {
     errorMsg[serial].innerHTML = message;
@@ -94,6 +97,10 @@ let checkpassword=(id,serial)=>{
         }
     }
     if(!(password.value===cpassword.value)) return;
+    if(recaptchecked===false){
+        errorMsg[3].innerHTML="FILL OUT THE CAPTCHA";
+        return;
+    }
     let success=document.getElementsByClassName("success");
     let start = Date.now();
     let timer = setInterval(function() {
