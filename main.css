@@ -93,10 +93,10 @@ button:hover{
 .start_window{
     border-radius: 100px;
     margin-top:120px;
-    margin-left:13vh;
+    margin-left:120px;
     padding: 20px;
     font-family: 'Optima';
-    width:1600px;
+    width:165vh;
     height: 400px;
     border: 2px solid;
     border-color: white;
