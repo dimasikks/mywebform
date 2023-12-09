@@ -3,9 +3,6 @@
 	padding: 0;
 	margin: 0;
 }
-body{
-    min-height: 100%;
-}
 .main{
     background-color: hsl(210deg, 30%, 8%);
     width: 100%;
