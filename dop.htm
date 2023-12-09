@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>WebForm</title>
+<link rel="stylesheet" href="dop.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="b1">
+<button class="button_1" onclick="openPage(event,'reg')">REGISTER</button></div>
+</div>
+<div class="main">
+    <div class="forms">
+        <div id="start_window" class="start_window">
+            <h1>HELLO</h1>
+            <p class="this">dimasikks</p>
+            
+        </div>
+        <div class="message">
+            Enter the addresses and click below to send the newsletter:
+            <div class="tt"><p><textarea row="2" cols="80" maxlength="300" id="text1"></textarea></p>
+            </div>
+        </div>
+        <script>
+            function sendmail(){
+                var info=document.getElementById('text1').value.toString();
+                window.location.href="mailto:"+info+"?subject=USE_YOUR_TEXT_DIMASIKKS";
+            }
+
+        </script>
+        <button id="bt" onclick="sendmail()">CREATE NEWSLETTER</button>
+    </div>
+</div>
+<div class="lowbar">created by <a href=https://t.me/dmsksc target="_blank" class="pinfo">dimasikks</a></div>
+</div>
+
+</body>
+
+</html>

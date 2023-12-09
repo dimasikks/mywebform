@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.main{
+    background-color: hsl(210deg, 30%, 8%);
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    min-width:100%;
+}
+.button_1{
+    opacity: 0;
+    margin-top: 0.5vw;
+    margin-left: 35vw;
+    width: 25vw;
+    height: 4vw;
+    border-radius: 40px;
+}
+.b1{
+    z-index: 20;
+}
+button{
+    font-weight: bold;
+    border-radius: 25px;
+    letter-spacing: 15px;
+    font-size: 35px;
+    height: 60px;
+    color:white;
+    border-color: white;
+    background-color: hsl(210deg, 30%, 8%);
+    transition: all 0.1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+button:hover{
+    color:black;
+    background-color: white;
+}
+.forms{
+    border: 20px solid;
+    border-color:rgb(0, 0, 0);
+    border-style: none solid;
+    order:1;
+    flex:40;
+}
+
+.lowbar{
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    order:2;
+    flex:0.5;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+.pageform{
+    background: none;
+    padding-top:110px;
+    position: absolute;
+    top:0;
+    color:white;
+}
+
+
+.start_window{
+    letter-spacing: 5px;
+    position: absolute;
+    border-radius: 100px;
+    margin-top:30px;
+    margin-left:6vw;
+    margin-right: 7vw;
+    padding: 20px;
+    font-family: 'Optima';
+    width:86vw;
+    height: 400px;
+    border: 2px solid;
+    border-color: white;
+    text-align: center;
+    font-size: 100px;
+    color:White;
+}
+
+.pinfo{
+    color:white;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.pinfo:hover{
+    color: blue;
+}
+.message{
+    color:white;
+    padding-top: 25vw;
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+textarea{
+    resize: none;
+    height: 8vw;
+    font-size: 20px;
+}
+.tt{
+    padding-top:1vw;
+}
+#bt{
+    margin-top:1vw;
+    padding-left: 15px;
+    margin-left: 32vw;
+}
