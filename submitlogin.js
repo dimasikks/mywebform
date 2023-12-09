@@ -5,14 +5,10 @@ let un = id2("username1"),
     pw = id2("password1");
 let trigg=1;
 function logincheck(){
-    response=grecaptcha.getResponse();
     checkNmblank(un);
     checkPwblank(pw);
     if(trigg){
-        if(response.length===0) {
-            alert("FILL OUT THE CAPTCHA");
-            return;
-        }
+    
     }
 };
 function checkNmblank(ex){
