@@ -13,8 +13,10 @@
     <div class="forms">
         <div id="start_window" class="start_window">
             <h1>HELLO</h1>
-            <p class="this">dimasikks</p>
-            
+            <p id="this1"></p>
+            <script>
+                document.getElementById('this1').innerHTML=localStorage.getItem("username");
+             </script>
         </div>
         <div class="message">
             Enter the addresses and click below to send the newsletter:
